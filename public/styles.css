@@ -75,7 +75,7 @@ a { color: inherit; }
 .nav a:hover { color: var(--text); }
 main { padding: 34px 0 72px; }
 .section { padding: 34px 0; }
-.page-hero { max-width: 920px; }
+.page-hero { max-width: 980px; }
 .eyebrow {
   display: inline-flex;
   align-items: center;
@@ -103,7 +103,7 @@ h2 {
 }
 h3 { font-size: 1.1rem; margin-bottom: 10px; }
 p { color: var(--muted); }
-.lead { font-size: 1.12rem; max-width: 68ch; color: var(--soft); }
+.lead { font-size: 1.12rem; max-width: 78ch; color: var(--soft); }
 .section-heading { max-width: 850px; margin-bottom: 18px; }
 .actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 20px; }
 .align-end { justify-content: flex-end; }
@@ -134,7 +134,8 @@ p { color: var(--muted); }
 }
 .card p { color: var(--muted); }
 .card ul { margin: 12px 0 0; padding-left: 18px; color: var(--muted); }
-.service-card { min-height: 100%; }
+.service-card, .service-block { min-height: 100%; }
+.service-stack { display: grid; gap: 16px; }
 .callout {
   display: grid;
   grid-template-columns: 1.2fr 0.8fr;
@@ -146,6 +147,8 @@ p { color: var(--muted); }
 .list-clean { list-style: none; padding: 0; margin: 0; }
 .list-clean li { padding: 13px 0; border-top: 1px solid rgba(148, 163, 184, 0.12); color: var(--soft); }
 .list-clean li:first-child { border-top: 0; }
+.hero-list { margin: 22px 0 0; padding-left: 20px; color: var(--soft); max-width: 82ch; }
+.hero-list li { margin-bottom: 8px; }
 .steps-list { margin: 0; padding-left: 20px; color: var(--muted); }
 .steps-list li { margin-bottom: 12px; }
 .steps-list strong { color: var(--soft); }
