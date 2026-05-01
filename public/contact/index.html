@@ -4,9 +4,17 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Contact | Netsera</title>
-  <meta name="description" content="Contact Netsera about a network issue or implementation project." />
+  <meta name="description" content="Contact Netsera for network consulting, troubleshooting, Wi-Fi, firewall, VPN, switching, routing, WAN, SD-WAN, and network refresh support in the north metro Twin Cities area." />
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="/styles.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    "name": "Contact Netsera",
+    "url": "https://netsera.tech/contact/"
+  }
+  </script>
 </head>
 <body>
   <header class="topbar">
@@ -26,35 +34,66 @@
   <main class="shell">
     <section class="section page-hero">
       <div class="eyebrow">Contact</div>
-      <h1>Send the issue. Keep it simple.</h1>
-      <p class="lead">Tell us what is not working, what equipment is involved, and what outcome you need.</p>
-      <div class="actions">
-        <a class="button" href="mailto:hello@netsera.tech?subject=Netsera%20network%20review">Email Netsera</a>
+      <h1>Tell Netsera what is happening with the network.</h1>
+      <p class="lead">Use the form to share the issue, location, systems involved, and what needs to work next. Netsera serves small and mid-sized businesses across the north metro Twin Cities and surrounding area.</p>
+    </section>
+
+    <section class="section two-col">
+      <div class="panel pad">
+        <h2>Request a network review</h2>
+        <form class="contact-form" action="#" method="post">
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" autocomplete="name" />
+
+          <label for="company">Company</label>
+          <input id="company" name="company" type="text" autocomplete="organization" />
+
+          <label for="email">Business email</label>
+          <input id="email" name="email" type="email" autocomplete="email" />
+
+          <label for="service">What do you need help with?</label>
+          <select id="service" name="service">
+            <option>Network troubleshooting</option>
+            <option>Business Wi‑Fi</option>
+            <option>Firewall / VPN / remote access</option>
+            <option>Switching / routing / WAN / SD‑WAN</option>
+            <option>LAN refresh or implementation project</option>
+            <option>Ongoing network support</option>
+            <option>Not sure yet</option>
+          </select>
+
+          <label for="message">What is happening?</label>
+          <textarea id="message" name="message" rows="7" placeholder="Briefly describe the issue, affected users or location, equipment involved, urgency, and desired outcome."></textarea>
+
+          <button class="button" type="submit">Request a network review</button>
+          <p class="form-note">Form delivery is being configured. Business email: <strong>[business email coming soon]</strong></p>
+        </form>
+      </div>
+      <div class="panel pad">
+        <h2>Helpful details</h2>
+        <ul class="list-clean">
+          <li>What is failing, slow, unreliable, or being replaced</li>
+          <li>Business impact, urgency, and affected users or locations</li>
+          <li>Relevant systems: Wi‑Fi, switching, routing, firewalls, VPNs, WAN, SD‑WAN, or desktop connectivity</li>
+          <li>Platforms involved, such as Fortinet, Cisco, Meraki, UniFi/Ubiquiti, Aruba, WatchGuard, pfSense, Ruckus, SonicWall, or HP networking</li>
+          <li>Whether this is a fix, refresh, implementation project, or ongoing support need</li>
+        </ul>
       </div>
     </section>
 
     <section class="section two-col">
       <div class="panel pad">
-        <h2>Helpful details</h2>
-        <ul class="list-clean">
-          <li>What is failing or being replaced</li>
-          <li>Who is affected</li>
-          <li>The equipment involved</li>
-          <li>Any deadline or urgency</li>
-        </ul>
+        <h2>Service area</h2>
+        <p>Netsera serves small and mid-sized businesses across the north metro Twin Cities and surrounding area.</p>
       </div>
       <div class="panel pad">
-        <h2>Common requests</h2>
-        <ul class="list-clean">
-          <li>Wi‑Fi issues</li>
-          <li>Firewall and VPN work</li>
-          <li>LAN refreshes</li>
-          <li>Implementation projects</li>
-        </ul>
+        <h2>Not ready to scope it yet?</h2>
+        <p>That is okay. Send the network issue in plain language. Netsera can help determine whether the request is a quick review, a scoped project, or an ongoing support fit.</p>
+        <div class="actions"><a class="button-ghost" href="/services/">View network services</a></div>
       </div>
     </section>
   </main>
 
-  <footer class="shell footer">Netsera — practical network help for small businesses.</footer>
+  <footer class="shell footer">Netsera provides senior-level network consulting for small and mid-sized businesses across the north metro Twin Cities and surrounding area. Services include Wi‑Fi, switching, routing, firewalls, VPNs, WAN, SD‑WAN, troubleshooting, and network refreshes.</footer>
 </body>
 </html>

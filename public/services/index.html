@@ -4,9 +4,19 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Services | Netsera</title>
-  <meta name="description" content="Netsera services for troubleshooting, LAN refreshes, security, and implementation work." />
+  <meta name="description" content="Network troubleshooting, Wi-Fi, firewall, VPN, switching, routing, WAN, SD-WAN, network refresh, and ongoing support services for north metro Twin Cities businesses." />
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="/styles.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Netsera network consulting services",
+    "provider": { "@type": "ProfessionalService", "name": "Netsera Technology" },
+    "areaServed": "North metro Twin Cities and surrounding area",
+    "serviceType": ["Network troubleshooting", "Business Wi-Fi", "Firewall and VPN", "Switching and routing", "WAN and SD-WAN", "Network refreshes", "Ongoing network support"]
+  }
+  </script>
 </head>
 <body>
   <header class="topbar">
@@ -25,46 +35,83 @@
 
   <main class="shell">
     <section class="section page-hero">
-      <div class="eyebrow">Services</div>
-      <h1>Simple service areas. Clear scope. No fluff.</h1>
-      <p class="lead">Netsera keeps the work focused on the network problems and projects that matter most to small businesses.</p>
+      <div class="eyebrow">Network services</div>
+      <h1>Focused network help for SMB fixes, refreshes, and implementation projects.</h1>
+      <p class="lead">Serving small and mid-sized businesses across the north metro Twin Cities and surrounding area.</p>
+      <div class="actions">
+        <a class="button" href="/contact/">Request a network review</a>
+        <a class="button-ghost" href="/about/">About Netsera</a>
+      </div>
     </section>
 
     <section class="section cards">
-      <article class="card service-card">
+      <article class="card service-card" id="troubleshooting">
         <h3>Network Troubleshooting</h3>
-        <p>Fix connectivity issues, flaky Wi‑Fi, VPN problems, and performance bottlenecks.</p>
+        <p><strong>For:</strong> slow systems, unreliable connectivity, recurring outages, remote access issues, or network problems that keep coming back.</p>
+        <ul>
+          <li>Review the symptoms, affected users, and business impact</li>
+          <li>Trace the issue through the network path</li>
+          <li>Recommend a practical fix or next-step plan</li>
+        </ul>
       </article>
-      <article class="card service-card">
-        <h3>LAN Refresh & Implementation</h3>
-        <p>Plan and roll out switching, wireless, firewall, and site network upgrades.</p>
+      <article class="card service-card" id="wifi-switching">
+        <h3>Business Wi‑Fi</h3>
+        <p><strong>For:</strong> offices, warehouses, shops, and mixed-use spaces where wireless coverage and reliability matter.</p>
+        <ul>
+          <li>Wi‑Fi performance and coverage review</li>
+          <li>Access point and switching support</li>
+          <li>UniFi/Ubiquiti, Meraki, Aruba, Cisco, Ruckus, and mixed-vendor environments</li>
+        </ul>
       </article>
-      <article class="card service-card">
-        <h3>Security & Remote Access</h3>
-        <p>Improve firewall, VPN, and secure access setups.</p>
+      <article class="card service-card" id="firewall-vpn">
+        <h3>Firewall & VPN</h3>
+        <p><strong>For:</strong> businesses that need secure remote access, firewall cleanup, perimeter improvements, or supportable VPN connectivity.</p>
+        <ul>
+          <li>Firewall and VPN review</li>
+          <li>Secure access implementation support</li>
+          <li>Validation and structured handoff documentation</li>
+        </ul>
       </article>
-      <article class="card service-card">
+      <article class="card service-card" id="switching-routing">
+        <h3>Switching, Routing, WAN & SD‑WAN</h3>
+        <p><strong>For:</strong> businesses with multiple network segments, sites, internet paths, or routing decisions that need senior-level review.</p>
+        <ul>
+          <li>Switching and routing support</li>
+          <li>WAN and SD‑WAN planning assistance</li>
+          <li>Business application reachability review</li>
+        </ul>
+      </article>
+      <article class="card service-card" id="refreshes">
+        <h3>Network Refreshes & Implementation</h3>
+        <p><strong>For:</strong> businesses replacing aging gear, opening or refreshing a site, or planning a more reliable LAN.</p>
+        <ul>
+          <li>Refresh planning and implementation support</li>
+          <li>Firewall, switching, wireless, and routing coordination</li>
+          <li>Cutover planning and post-change documentation</li>
+        </ul>
+      </article>
+      <article class="card service-card" id="ongoing-support">
         <h3>Ongoing Network Support</h3>
-        <p>Recurring help for projects, escalations, and documentation.</p>
+        <p><strong>For:</strong> SMBs, project teams, and IT providers that need recurring senior network help without hiring full-time.</p>
+        <ul>
+          <li>Project support and escalation help</li>
+          <li>Implementation planning</li>
+          <li>Documentation and recommendations</li>
+        </ul>
       </article>
     </section>
 
     <section class="section two-col">
       <div class="panel pad">
-        <h2>Good fit</h2>
-        <ul class="list-clean">
-          <li>Small business network issues</li>
-          <li>LAN refreshes and upgrades</li>
-          <li>Wireless, switch, firewall, and VPN work</li>
-          <li>Implementation projects that need a network lead</li>
-        </ul>
+        <h2>Common platforms</h2>
+        <p>Netsera is vendor-neutral and works across Fortinet, Cisco, Meraki, UniFi/Ubiquiti, Aruba, WatchGuard, pfSense, Ruckus, SonicWall, HP networking, and mixed-vendor environments.</p>
       </div>
       <div class="panel pad">
-        <h2>Not a fit</h2>
+        <h2>FAQ</h2>
         <ul class="list-clean">
-          <li>Open-ended support with no scope</li>
-          <li>Requests that cannot be tested or handed off</li>
-          <li>Projects with no access or no basic context</li>
+          <li><strong>Is Netsera a full MSP?</strong> No. Netsera focuses on network consulting, troubleshooting, implementation, and project support.</li>
+          <li><strong>Can Netsera help with one issue?</strong> Yes. A focused network review is often the best starting point.</li>
+          <li><strong>Does Netsera work locally?</strong> Yes. Netsera serves the north metro Twin Cities and surrounding area.</li>
         </ul>
       </div>
     </section>
@@ -72,14 +119,14 @@
     <section class="section">
       <div class="panel callout">
         <div>
-          <h2>Want a quick review?</h2>
-          <p class="lead">Send the problem and the equipment involved.</p>
+          <h2>Need help with Wi‑Fi, firewall, or VPN problems?</h2>
+          <p class="lead">Send the network issue, the environment involved, and the outcome needed.</p>
         </div>
-        <div class="actions align-end"><a class="button" href="/contact/">Book a network review</a></div>
+        <div class="actions align-end"><a class="button" href="/contact/">Request a network review</a></div>
       </div>
     </section>
   </main>
 
-  <footer class="shell footer">Netsera — practical network help for small businesses.</footer>
+  <footer class="shell footer">Netsera provides senior-level network consulting for small and mid-sized businesses across the north metro Twin Cities and surrounding area. Services include Wi‑Fi, switching, routing, firewalls, VPNs, WAN, SD‑WAN, troubleshooting, and network refreshes.</footer>
 </body>
 </html>
