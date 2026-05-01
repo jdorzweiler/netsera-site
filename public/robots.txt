@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://netsera.tech/sitemap.xml
