@@ -34,84 +34,53 @@
   <main class="shell">
     <section class="section page-hero">
       <div class="eyebrow">Contact</div>
-      <h1>Tell us what is happening with the network.</h1>
-      <p class="lead">Send the issue, the equipment involved, the location or sites affected, and what outcome you need. You do not need to have everything diagnosed first — just share what you know.</p>
+      <h1>Use this form for project work or an issue.</h1>
+      <p class="lead">Send the basics and Netsera will follow up. You do not need a full diagnosis first.</p>
       <p class="lead">Netsera serves small and mid-sized businesses across the north metro Twin Cities and surrounding area.</p>
       <p class="lead">Email: <a href="mailto:contact@netsera.tech">contact@netsera.tech</a></p>
     </section>
 
     <section class="section two-col">
       <div class="panel pad">
-        <h2>Send the network issue</h2>
+        <h2>Contact form</h2>
         <form class="contact-form" action="mailto:contact@netsera.tech" method="post" enctype="text/plain">
-          <label for="name">Name</label>
-          <input id="name" name="name" type="text" autocomplete="name" />
+          <label for="name">Contact name</label>
+          <input id="name" name="name" type="text" autocomplete="name" required />
 
-          <label for="company">Company</label>
-          <input id="company" name="company" type="text" autocomplete="organization" />
+          <label for="phone">Contact number</label>
+          <input id="phone" name="phone" type="tel" autocomplete="tel" required />
 
-          <label for="email">Business email</label>
-          <input id="email" name="email" type="email" autocomplete="email" />
-
-          <label for="phone">Phone number, optional</label>
-          <input id="phone" name="phone" type="tel" autocomplete="tel" />
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" autocomplete="email" required />
 
           <label for="location">City or service location</label>
-          <input id="location" name="location" type="text" />
+          <input id="location" name="location" type="text" required />
 
-          <label for="service">Service needed</label>
-          <select id="service" name="service">
-            <option>Wi-Fi issue</option>
-            <option>Firewall or VPN</option>
-            <option>Network troubleshooting</option>
-            <option>Switching, routing, or WAN</option>
-            <option>Network refresh</option>
-            <option>Multi-site project</option>
-            <option>Other</option>
-          </select>
+          <label for="message">Brief description of what you are looking to get done</label>
+          <textarea id="message" name="message" rows="7" placeholder="Project work or issue details, affected sites or users, and any timing notes." required></textarea>
 
-          <label for="equipment">Equipment involved</label>
-          <input id="equipment" name="equipment" type="text" />
-
-          <label for="scope">Number of users or sites affected</label>
-          <input id="scope" name="scope" type="text" />
-
-          <label for="urgency">Urgency</label>
-          <select id="urgency" name="urgency">
-            <option>Not urgent / planning ahead</option>
-            <option>Soon / this week</option>
-            <option>Urgent / business impact</option>
-            <option>Outage or active cutover</option>
-          </select>
-
-          <label for="message">Message</label>
-          <textarea id="message" name="message" rows="7" placeholder="Briefly describe the issue, what changed recently, who is affected, equipment involved, deadline or outage window, and desired outcome."></textarea>
-
-          <button class="button" type="submit">Send the network issue</button>
-          <p class="form-note">Business email: <a href="mailto:contact@netsera.tech">contact@netsera.tech</a></p>
+          <button class="button" type="submit">Send inquiry</button>
+          <p class="form-note">Email: <a href="mailto:contact@netsera.tech">contact@netsera.tech</a></p>
         </form>
       </div>
       <div class="panel pad">
-        <h2>Helpful details to include</h2>
+        <h2>Helpful details</h2>
         <ul class="list-clean">
           <li>What changed recently?</li>
           <li>Who is affected?</li>
-          <li>Is the issue intermittent or constant?</li>
-          <li>What equipment is involved?</li>
-          <li>Is there a deadline or outage window?</li>
-          <li>Are multiple sites affected?</li>
-          <li>Do you have diagrams, screenshots, or configuration notes?</li>
+          <li>Is this project work or a current issue?</li>
+          <li>Are there timing or outage constraints?</li>
         </ul>
-        <p>Please do not include passwords in the contact form.</p>
+        <p>Please do not include passwords in the form.</p>
       </div>
     </section>
 
     <section class="section">
       <div class="panel callout">
         <div>
-          <h2>Ready to send the network issue?</h2>
+          <h2>Ready to get started?</h2>
         </div>
-        <div class="actions align-end"><a class="button" href="#name">Send the network issue</a></div>
+        <div class="actions align-end"><a class="button" href="#name">Send inquiry</a></div>
       </div>
     </section>
   </main>
