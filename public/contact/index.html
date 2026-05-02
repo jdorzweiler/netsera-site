@@ -33,87 +33,97 @@
 
   <main class="shell">
     <section class="section page-hero">
-      <div class="eyebrow">Contact</div>
-      <h1>Contact Netsera</h1>
-      <p class="lead">Need help with a network issue, upcoming refresh, or firewall/VPN project? Send a quick note with what you are trying to fix or improve. You do not need to have everything scoped out yet.</p>
-      <p class="lead">Netsera serves small and mid-sized businesses across the north metro Twin Cities and surrounding area. Some work can be handled remotely, while on-site work may be available depending on the request and location.</p>
-      <p class="lead">Email: <a href="mailto:contact@netsera.tech">contact@netsera.tech</a></p>
+      <div class="eyebrow">Contact Netsera</div>
+      <h1>Let’s talk about your network.</h1>
+      <p class="lead">Need help with Wi-Fi, firewalls, VPNs, switching, routing, WAN connectivity, or a network refresh? Send a quick note with what you are trying to fix or improve. You do not need to have everything figured out before reaching out.</p>
+      <p class="lead">Netsera works with small and mid-sized businesses across the north metro Twin Cities and surrounding area that need practical, senior-level network help without hiring a full-time network engineer.</p>
+      <div class="actions">
+        <a class="button" href="#name">Send a network request</a>
+      </div>
+      <p class="form-note">Prefer email? Use <a href="mailto:contact@netsera.tech">contact@netsera.tech</a>.</p>
     </section>
 
-    <section class="section two-col">
+    <section class="section">
       <div class="panel pad">
         <h2>Send a network request</h2>
-        <p>Share what you can below. A plain-language description is fine. If there are technical details available, include them too.</p>
+        <p>Use the form below to describe what you need help with. Plain language is fine. If you know the equipment, vendor, location, or urgency, include that too.</p>
         <form class="contact-form" action="mailto:contact@netsera.tech" method="post" enctype="text/plain">
           <label for="name">Name</label>
           <input id="name" name="name" type="text" autocomplete="name" placeholder="Your name" required />
 
           <label for="company">Company</label>
-          <input id="company" name="company" type="text" autocomplete="organization" placeholder="Business or organization name" required />
+          <input id="company" name="company" type="text" autocomplete="organization" placeholder="Business or organization name" />
 
-          <label for="email">Business email</label>
+          <label for="email">Email</label>
           <input id="email" name="email" type="email" autocomplete="email" placeholder="Where should Netsera reply?" required />
 
-          <label for="service">What kind of help do you need?</label>
+          <label for="phone">Phone</label>
+          <input id="phone" name="phone" type="tel" autocomplete="tel" placeholder="Optional" />
+
+          <label for="location">City or location</label>
+          <input id="location" name="location" type="text" placeholder="City or general service area" />
+
+          <label for="service">What do you need help with?</label>
           <select id="service" name="service" required>
             <option>Network troubleshooting</option>
             <option>Business Wi-Fi</option>
-            <option>Firewall, VPN, or remote access</option>
-            <option>Switching, routing, WAN, or SD-WAN</option>
-            <option>LAN refresh or implementation project</option>
+            <option>Firewall or VPN</option>
+            <option>Switching, routing, or WAN</option>
+            <option>LAN refresh or network project</option>
             <option>Ongoing network support</option>
             <option>Not sure yet</option>
           </select>
 
-          <label for="message">Tell me what is going on</label>
-          <textarea id="message" name="message" rows="7" placeholder="A short description is fine. For example: Wi-Fi is unreliable, a VPN is not connecting, a firewall needs to be replaced, a new office needs network setup, or you want a second set of eyes on the current design." required></textarea>
-
-          <label for="urgency">How urgent is this?</label>
+          <label for="urgency">How urgent is it?</label>
           <select id="urgency" name="urgency">
-            <option>Not urgent — planning ahead</option>
-            <option>Soon — within the next few weeks</option>
-            <option>Urgent — affecting users now</option>
+            <option>Planning ahead</option>
+            <option>Within the next few weeks</option>
+            <option>Affecting users now</option>
             <option>Not sure</option>
           </select>
 
-          <label for="location">Location or service area</label>
-          <input id="location" name="location" type="text" placeholder="City or general location, especially if on-site work may be needed." />
+          <label for="message">Tell me what is going on</label>
+          <textarea id="message" name="message" rows="7" placeholder="For example: Wi-Fi is unreliable, a VPN is not connecting, a firewall needs to be replaced, a new office needs network setup, or you want a second set of eyes on the current design." required></textarea>
+          <p class="form-note">Please do not include passwords, private keys, or sensitive credentials in this form.</p>
 
           <button class="button" type="submit">Send network request</button>
-          <p class="form-note">You can also email Netsera directly at <a href="mailto:contact@netsera.tech">contact@netsera.tech</a>.</p>
+          <p class="form-note" hidden>Thanks — your request has been sent. Netsera will review the details and follow up with next steps.</p>
+          <p class="form-note" hidden>Something went wrong while sending the form. Please try again or email <a href="mailto:contact@netsera.tech">contact@netsera.tech</a>.</p>
         </form>
-      </div>
-      <div class="panel pad">
-        <h2>Helpful details to include if you have them</h2>
-        <ul class="list-clean">
-          <li>What is slow, failing, unreliable, or being replaced</li>
-          <li>How many users, locations, or devices are affected</li>
-          <li>Whether the issue is urgent or part of a planned project</li>
-          <li>Any known equipment or platforms involved, such as Fortinet, Cisco, Meraki, UniFi/Ubiquiti, Aruba, WatchGuard, pfSense, Ruckus, SonicWall, or HP networking</li>
-          <li>Whether you need troubleshooting, project help, documentation, implementation, or an outside review</li>
-        </ul>
-        <p>Please do not include passwords in the form.</p>
       </div>
     </section>
 
-    <section class="section two-col">
+    <section class="section">
+      <div class="panel pad">
+        <h2>Helpful details to include</h2>
+        <p>You do not need to provide all of this, but these details can help Netsera understand the request faster:</p>
+        <ul class="list-clean">
+          <li>What is slow, unreliable, failing, or being replaced</li>
+          <li>How many users, locations, or devices are affected</li>
+          <li>Whether this is a current issue or a planned project</li>
+          <li>Any known equipment or platforms involved, such as Fortinet, Cisco, Meraki, UniFi/Ubiquiti, Aruba, WatchGuard, pfSense, Ruckus, SonicWall, or HP networking</li>
+          <li>Any timing constraints, outage windows, or business hours to work around</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section">
       <div class="panel pad">
         <h2>Service area</h2>
         <p>Netsera serves small and mid-sized businesses across the north metro Twin Cities and surrounding area. Some work can be handled remotely, while on-site work may be available depending on the request and location.</p>
-      </div>
-      <div class="panel pad">
-        <h2>Not sure what to ask for yet?</h2>
-        <p>That is completely fine. Describe the problem in normal business terms. Netsera can help sort out whether it is a quick troubleshooting call, a project that needs to be scoped, or an ongoing support need.</p>
-        <div class="actions"><a class="button-ghost" href="/services/">View network services</a></div>
       </div>
     </section>
 
     <section class="section">
       <div class="panel callout">
         <div>
-          <h2>Ready to send a network request?</h2>
+          <h2>Not sure what to ask for?</h2>
+          <p>That is completely fine. Describe the problem in normal business terms. Netsera can help sort out whether it is a troubleshooting issue, a project that needs to be scoped, or an ongoing support need.</p>
         </div>
-        <div class="actions align-end"><a class="button" href="#name">Send network request</a></div>
+        <div class="actions align-end">
+          <a class="button" href="#name">Send a network request</a>
+          <a class="button-ghost" href="/services/">View services</a>
+        </div>
       </div>
     </section>
   </main>
